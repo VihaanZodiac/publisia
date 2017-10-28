@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>udit</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    var ClickCount = 0;
+    function countClicks() {
+    	var clickLimit = 10; //Max number of clicks
+    	if(ClickCount>=clickLimit) {
+
+    		return false;
+
+    	}
+    	else
+    	{
+        alert("You have clicked this button "+ClickLimit+" times.");
+    		ClickCount++;
+    		return true;
+    	}
+    }
+    </script>
+
+    <input type="button" value="Click" name="clickOnce" onclick="return countClicks();" />
+
+  </body>
+</html>
